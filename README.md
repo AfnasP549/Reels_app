@@ -28,7 +28,9 @@ A Flutter application that fetches and displays video reels from an API, impleme
 ## **🛠️ Prerequisites**
 
 Flutter SDK: >=2.18.0 <3.0.0
+
 Dart SDK
+
 Android Studio or VS Code with Flutter plugin
 
 
