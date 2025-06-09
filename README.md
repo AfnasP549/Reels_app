@@ -1,16 +1,57 @@
-# reels_app
+Reels App
 
-A new Flutter project.
 
-## Getting Started
+A Flutter application that fetches and displays video reels from an API, implementing pagination, lazy loading, caching, and clean architecture with the BLoC pattern.
+Features
 
-This project is a starting point for a Flutter application.
+Fetches video reels from the provided API
+Implements pagination with lazy loading
+Caches reel data using Hive
+Uses BLoC for state management
+Implements dependency injection with GetIt
+Handles errors gracefully
+Displays videos in a reels-like interface with smooth scrolling
 
-A few resources to get you started if this is your first Flutter project:
+Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter SDK: >=2.18.0 <3.0.0
+Dart SDK
+Android Studio or VS Code with Flutter plugin
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Installation
+
+Clone the repository:
+git clone <repository-url>
+cd reels_app
+
+
+Install dependencies:
+flutter pub get
+
+
+Generate Hive adapters:
+flutter pub run build_runner build
+
+
+Run the application:
+flutter run
+
+
+
+Notes
+
+The app uses the http package for API requests and video_player for video playback.
+Pagination is achieved by loading more reels when the user scrolls near the bottom.
+Error handling covers API failures and JSON parsing issues.
+The UI mimics a reels interface with smooth scrolling and video playback.
+
+Dependencies
+
+http: For making API requests
+flutter_bloc: For state management
+get_it: For dependency injection
+cached_network_image: For loading and caching thumbnail images
+video_player: For playing videos
+path_provider: For accessing file storage
+
+
